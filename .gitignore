@@ -1,0 +1,8 @@
+node_modules/
+go-ai-server/node_modules/
+go-ai-server/gtp_logs/
+project.private.config.json
+*.log
+.env
+.env.*
+.DS_Store

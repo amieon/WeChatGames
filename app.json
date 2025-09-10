@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/snake/snake",
+    "pages/block/block",
+    "pages/2048/2048",
+    "pages/bird/bird",
+    "pages/logs/logs",
+    "pages/weiqi_BT/weiqi_BT",
+    "pages/weiqi_AI/weiqi_AI",
+    "pages/wuziqi_BT/wuziqi_BT",
+    "pages/wuziqi_AI/wuziqi_AI"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#242424",
+    "navigationBarTitleText": "小游戏",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#fcf8ef"
+  }
+}

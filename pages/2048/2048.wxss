@@ -1,0 +1,227 @@
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-right: 100rpx;
+  margin-left:50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    
+}
+
+.scorebox{
+  background-color: #b9ab9f;
+  color:#ffffff;
+  padding:10rpx;
+}
+
+.again {
+    
+    text-align: center;
+   
+}
+
+.title{
+    flex:1;
+    height: 40rpx;
+    line-height: 40rpx;
+    background:deepskyblue;
+    margin: 10rpx 40rpx 10rpx 10rpx;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    border-radius: 8rpx;
+}
+
+
+.scoredetail{
+    flex:1;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    display:flex;
+    
+}
+.scoredetail2{
+    flex:1;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    display:flex;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10rpx 0;
+}
+
+.btn {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:25rpx; 
+}
+.btnmiddle {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25rpx; 
+}
+.btnicon {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+
+
+.center-btn {
+  background: #fbf8ef;
+}
+
+
+
+.btnturn{
+  background: #ffb662;
+  color:#ffffff;
+  width:80rpx;
+  height:80rpx;
+  margin:0px;
+  margin-left:0px;
+  padding:0px;
+    
+}
+
+
+
+.btnicon{
+   width:40px; 
+   height:40px;
+
+}
+
+.scoredetail:last-child{
+    margin-right: 40rpx;
+}
+
+.scoredesc{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+    
+}
+.scorenumber{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+}
+.scorenumber2{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+}
+.ground{
+    width: 600rpx;
+    height:640rpx;
+    margin: 0rpx 0rpx 0rpx 50rpx;
+    background: #ccc0b2;
+}
+.block {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  border-radius: 10rpx;
+  background: #cdc1b4;
+  color: #776e65;
+}
+.rows{
+  display: flex;
+  flex-direction: row;
+}
+.cols{
+  display: flex;
+  flex-direction: row;
+}
+.cell {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.control{
+    width: 100%;
+    height: 100%;
+    background-color: #fcf8ef;
+    margin-bottom: 0px;
+}
+.block_2  { background: #eee4da; color: #776e65; }
+.block_4  { background: #ede0c8; color: #776e65; }
+.block_8  { background: #f2b179; color: #f9f6f2; }
+.block_16 { background: #f59563; color: #f9f6f2; }
+.block_32 { background: #f67c5f; color: #f9f6f2; }
+.block_64 { background: #f65e3b; color: #f9f6f2; }
+.block_128 { background: #edcf72; color: #f9f6f2; font-size: 36rpx; }
+.block_256 { background: #edcc61; color: #f9f6f2; font-size: 36rpx; }
+.block_512 { background: #edc850; color: #f9f6f2; font-size: 36rpx; }
+.block_1024 { background: #edc53f; color: #f9f6f2; font-size: 32rpx; }
+.block_2048 { background: #edc22e; color: #f9f6f2; font-size: 32rpx; }
+.mini-btn{
+  margin-left: 10rpx;
+  background-color:#ffb661;
+}
+.mini-btnleft{
+  margin-left: 60rpx;
+}
+.mini-btnsx{
+  margin-left: 150rpx;
+  background-color:#ffb661;
+}
+
+.page-body{
+    width: 400rpx;
+    height:50rpx;
+    margin: 10rpx 0rpx 0rpx 0rpx;
+    background: #eeeeee;
+}
+
+page{
+  background-color: #fcf8ef;
+}

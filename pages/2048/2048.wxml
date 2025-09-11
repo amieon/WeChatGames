@@ -1,0 +1,44 @@
+<!--snake.wxml-->
+<view class="control">
+
+<view class="score" style="flex-direction:row; width:700rpx; height:150rpx; ">
+
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+<view class="scoredetail scorebox" style="flex-direction:column;">
+        <view class="scoredesc" >当前成绩</view>
+        <view class="scorenumber" >{{score}}</view>
+</view>
+<view class="scoredetail2 scorebox" style="flex-direction:column;">
+        <view class="scoredesc">历史最高</view>
+        <view class="scorenumber2">{{score}}</view>
+</view>
+
+</view>
+
+<view class="ground" style='color:grey'>
+  <view wx:for="{{ground}}" wx:for-item="cols" class="rows">
+    <view wx:for="{{cols}}" wx:for-item="num" class="block block_{{num}}">
+      <text wx:if="{{num != 0}}" class="num-text">{{num}}</text>
+    </view>
+  </view>
+</view>
+
+
+<view class="control">
+  <button class="btn up"bindtap="btnTop"><image src="/img/up.png" mode="aspectFit" class="btnicon"></image></button>
+  <view class="middle">
+    <button class="btn left"bindtap="btnLeft"><image src="/img/left.png" mode="aspectFit" class="btnicon"></image></button>
+    <button class="btnmiddle"></button>
+    <button class="btn right"bindtap="btnRight"><image src="/img/right.png" mode="aspectFit" class="btnicon"></image></button>
+  </view>
+  <button class="btn down"bindtap="btnBottom"><image src="/img/down.png" mode="aspectFit" class="btnicon"></image></button>
+</view>
+
+
+
+  <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+      <view calss="again" style='text-align: center;'>再试一次？</view>
+  </modal>
+
+</view>

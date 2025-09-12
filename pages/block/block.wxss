@@ -1,0 +1,181 @@
+/* pages/time/play.wxss */
+.play-box {
+    width: 100%;
+    position: fixed; 
+    margin-top: 20rpx;  
+    left: 0;
+    bottom: 0; 
+}
+.block-line {
+    width: 100%;
+    overflow: hidden;        
+}
+.block {
+  width: 25%;   
+  height: 8rem;
+  float: left;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.black {
+    background: #000000;
+}
+.control{
+  width: 100%;
+  height: 100%;
+  background-color: #fcf8ef;
+  margin-bottom: 0px;
+  position: relative; 
+  z-index: 1000;  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-right: 100rpx;
+  margin-left:50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    
+}
+
+.scorebox{
+  background-color: #b9ab9f;
+  color:#ffffff;
+  padding:10rpx;
+}
+
+.again {
+    
+    text-align: center;
+   
+}
+
+.title{
+    flex:1;
+    height: 40rpx;
+    line-height: 40rpx;
+    background:deepskyblue;
+    margin: 10rpx 40rpx 10rpx 10rpx;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    border-radius: 8rpx;
+}
+
+
+.scoredetail{
+    flex:1;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    display:flex;
+    
+}
+
+.scoredetail2{
+    flex:1;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    display:flex;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10rpx 0;
+}
+
+.btn {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:25rpx; 
+}
+.btnmiddle {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25rpx; 
+}
+.btnicon {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+
+
+.center-btn {
+  background: #fbf8ef;
+}
+
+
+
+.btnturn{
+  background: #ffb662;
+  color:#ffffff;
+  width:80rpx;
+  height:80rpx;
+  margin:0px;
+  margin-left:0px;
+  padding:0px;
+    
+}
+
+
+
+.btnicon{
+   width:40px; 
+   height:40px;
+
+}
+
+.scoredetail:last-child{
+    margin-right: 40rpx;
+}
+
+.scoredesc{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+    
+}
+.scorenumber{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+}
+.scorenumber2{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+}

@@ -1,0 +1,31 @@
+<view class="control">
+
+<view class="score" style="flex-direction:row; width:700rpx; height:150rpx; ">
+
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+<view class="scoredetail scorebox" style="flex-direction:column;">
+        <view class="scoredesc" >当前成绩</view>
+        <view class="scorenumber" >{{score}}</view>
+</view>
+<view class="scoredetail2 scorebox" style="flex-direction:column;">
+        <view class="scoredesc">时间</view>
+        <view class="scorenumber2">{{time}}s</view>
+</view>
+
+</view>
+</view>
+
+<view class="play-box">
+    <block wx:for="{{blockData}}" wx:for-index="i" wx:key="i">
+        <view class="block-line" id="line-{{blockData[i].id}}">
+            <block wx:for="{{blockData[i].block}}" wx:key="*this" wx:for-index="j">
+                <view wx:if="{{blockData[i].block[j] == 0}}" id="block-{{blockData[i].id}}-{{j}}-{{0}}" class="block" bindtap="handleClick"></view>
+                <view wx:else class="block black" id="block-{{blockData[i].id}}-{{j}}-{{1}}" bindtap="handleClick"></view>
+            </block>  
+        </view>
+    </block>
+</view>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+      <view calss="again" style='text-align: center;'>{{words}}</view>
+</modal>

@@ -1,0 +1,13 @@
+
+<view>
+  <canvas canvas-id="1"/>
+
+<view class="button-grid">
+  <button class="game-button top-left" type="primary" bindtouchstart="handleTouchLeftStart" bindtouchend="handleTouchLeftEnd">
+    {{status === 0 ? '开始游戏' : ''}} {{status === 1 ? '向左' : ''}} {{status === 2 ? '重新挑战' : ''}}
+  </button>
+  <button class="game-button top-right" type="primary" bindtouchstart="handleTouchRightStart" bindtouchend="handleTouchRightEnd">
+    {{status === 0 ? '开始游戏' : ''}} {{status === 1 ? '向右' : ''}} {{status === 2 ? '重新挑战' : ''}}
+  </button>
+</view>
+</view>

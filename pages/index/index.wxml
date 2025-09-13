@@ -1,0 +1,76 @@
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="button-grid">
+    <button bindtap="goSnake" class="game-button top-left">
+      <view class="image-container">
+        <image src="/images/snake.png" mode="aspectFill"></image>
+      </view>
+      <view class="text-container">贪吃蛇</view>
+    </button>
+    <button bindtap="go2048" class="game-button top-right">
+      <view class="image-container">
+        <image src="/images/2048.png" mode="aspectFill"></image>
+      </view>
+      <view class="text-container">2048</view>
+    </button>
+    <button bindtap="goblock" class="game-button bottom-left">
+      <view class="image-container">
+        <image src="/images/block.png" mode="aspectFill"></image>
+      </view>
+      <view class="text-container">别踩白块儿</view>
+    </button>
+    <button bindtap="gobird" class="game-button bottom-right">
+      <view class="image-container">
+        <image src="/images/bird.png" mode="aspectFill"></image>
+      </view>
+      <view class="text-container">飞翔的小鸟</view>
+    </button>
+    <button bindtap="goWeiqi" class="game-button">
+      <view class="image-container">
+        <image src="/images/weiqi.png" mode="aspectFill"></image>
+      </view>
+      <view class="text-container">围棋</view>
+    </button>
+    <button bindtap="goWuziqi" class="game-button">
+      <view class="image-container">
+        <image src="/images/wuziqi.png" mode="aspectFill"></image>
+      </view>
+      <view class="text-container">五子棋</view>
+    </button>
+  </view>
+
+  <!-- 滑动窗口：游戏本体 + 排行榜 -->
+  <view class="tab-container">
+    <swiper class="tab-swiper" current="{{currentTab}}" bindchange="onTabChange">
+      <swiper-item>
+        <view class="tab-content game-body">
+          <text class="tab-title">游戏简介</text>
+          <view class="game-desc">
+            <!-- <text>选择上方游戏，体验不同玩法！</text>
+            <text>2048：滑动合并数字，挑战高分。</text>
+            <text>贪吃蛇：吃食物增长，避撞墙。</text>
+            <text>别踩白块儿：计时模式，点击黑块得分。</text>
+            <text>五子棋：连5胜，挑战前端DFS AI。</text>
+            <text>围棋：围地吃子，对战KataGo AI。</text>
+            <text>愤怒的小鸟：弹射击猪，Canvas动画。</text> -->
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="tab-content rank-body">
+          <text class="tab-title">排行榜</text>
+          <view class="rank-list">
+            <view wx:for="{{rankList}}" wx:key="_id" class="rank-item">
+              <text>No.{{index + 1}} {{item.userNick || '匿名'}}: {{item.score}}</text>
+            </view>
+            <text wx:if="{{rankList.length === 0}}">暂无排行数据</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

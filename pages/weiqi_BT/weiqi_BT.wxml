@@ -1,0 +1,14 @@
+<view class="wuziqi-container" >
+  <canvas canvas-id='customCanvas' class="customCanvas" style="width:{{viewWidth}}px;height:{{viewWidth}}px" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" ></canvas>
+  <view class="buttom-view" >
+    <text style="color:white" >{{textShow}}</text>
+  </view>
+  <view class="buttom-action-view">
+    <view class="action-view-left" bindtap='reStart'>
+      <text style="color:white" >重新开始</text>
+    </view>
+    <view class="action-view-right" bindtap='pass'>
+      <text style="color:white" >Pass</text>
+    </view>
+  </view>
+</view>

@@ -1,1 +1,0 @@
-katago.exe gtp -model model.bin -config fast_gtp.cfg

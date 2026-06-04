@@ -8,10 +8,7 @@ const app = express();
 
 app.disable('x-powered-by');
 
-/**
- * 基础配置
- * 不要把真实路径、token 写死进代码，上传 GitHub 更安全。
- */
+
 const BOARD_SIZE = 19;
 
 const HOST = process.env.HOST || '127.0.0.1';
